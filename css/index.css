@@ -171,6 +171,11 @@ img {
 .navbar {
   border-bottom: 2px dashed #ccc;
 }
+@media (max-width: 760px) {
+  .navbar {
+    padding: 20px 0;
+  }
+}
 .navbar .top-nav {
   width: 800px;
   height: 80px;
@@ -180,6 +185,16 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 760px) {
+  .navbar .top-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: norwap;
+    flex-wrap: wrap;
+    width: auto;
+  }
 }
 .navbar .top-nav nav {
   width: 50%;
@@ -194,6 +209,11 @@ img {
   color: black;
   font-size: 1.5rem;
   font-weight: bold;
+}
+@media (max-width: 760px) {
+  .navbar .top-nav nav {
+    width: 80%;
+  }
 }
 .home header h2 {
   margin: 3% 0 1%;
