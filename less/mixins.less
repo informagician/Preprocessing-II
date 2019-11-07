@@ -1,1 +1,21 @@
 // Mixins in here
+
+.flex(@dir,@justify,@align:center,@wrap:wrap) {
+    display:flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @wrap;
+}
+
+.nice-btn(@bg,@size,@color) {
+    background-color:@bg;
+    font-size:@size;
+    color:@color;
+}
+.input(){
+    width: 100%;
+    margin: 2% 0 6%;
+    padding: 6px;
+    border: 1px solid #ccc;
+}

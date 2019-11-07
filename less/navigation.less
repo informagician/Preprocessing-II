@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+.navbar {
+
+    border-bottom: 2px dashed #ccc;
+    @media @tablet {
+        padding: 20px 0;
+    }
+    
+    .top-nav {
+        width: 800px;
+        height: 80px;
+        margin: 0 auto;
+        .flex(row,space-between);
+
+        @media @tablet {
+            .flex(column,space-between,norwap);
+            width: auto;
+        }
+        nav {
+            width: 50%;
+            .flex(row,space-between);
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            @media @tablet {
+                width: 80%;
+            }
+        }
+    }
+}
