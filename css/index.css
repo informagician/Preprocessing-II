@@ -215,6 +215,16 @@ img {
     width: 80%;
   }
 }
+@media (max-width: 760px) {
+  .home {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
+}
 .home header h2 {
   margin: 3% 0 1%;
 }
@@ -260,12 +270,26 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 760px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 760px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
 .home .content-pick .destination .btn {
-  padding: 10px 20px;
+  padding: 12px 20px;
   width: 80%;
   border-radius: 10px;
   text-align: center;
