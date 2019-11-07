@@ -215,6 +215,17 @@ img {
     width: 80%;
   }
 }
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
 @media (max-width: 760px) {
   .home {
     width: 90%;
@@ -284,6 +295,52 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+.home .package {
+  border-bottom: 2px dashed #ccc;
+}
+.home .package .text-content {
+  margin: 0 auto;
+  width: 75%;
+}
+.home .package form {
+  padding: 5%;
+  margin: 3% 0 5%;
+  background-color: #fafafa;
+  /* IMAGE STYLES */
+  /* CHECKED STYLES */
+}
+.home .package form .vehicle {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 5%;
+  text-align: center;
+}
+.home .package form .vehicle label {
+  width: 100px;
+  margin-left: 3%;
+}
+.home .package form i {
+  font-size: 5rem;
+  padding: 10px;
+  color: #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  text-align: center;
+  width: 80px;
+}
+.home .package form [type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.home .package form [type=radio] + i {
+  cursor: pointer;
+}
+.home .package form [type=radio]:checked + i {
+  color: #666;
+  border: 3px #666 solid;
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
@@ -329,15 +386,4 @@ img {
   background-color: #008080;
   font-size: 2rem;
   color: #FFFFFF;
-}
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
-}
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
 }

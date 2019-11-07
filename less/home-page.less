@@ -65,6 +65,59 @@
     }
   }
 
+  .package {
+    
+    border-bottom: 2px dashed #ccc;
+    .text-content {
+      margin:0 auto;
+      width: 75%;
+    }
+    form {
+      padding: 5%;
+      margin: 3% 0 5%;
+      background-color: #fafafa;
+      //.flex(column, space-around);
+      .vehicle {
+        width: 50%;
+        margin: 0 auto;
+        padding-top:5%;
+        text-align: center;
+        label {
+          width: 100px;
+          margin-left:3%;
+        }
+      }
+      i {
+        font-size: 5rem;
+        padding: 10px;
+        color: #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        text-align: center;
+        width: 80px;
+      }
+
+
+      [type=radio] { 
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* IMAGE STYLES */
+      [type=radio] + i {
+        cursor: pointer;
+      }
+      
+      /* CHECKED STYLES */
+      [type=radio]:checked + i {
+        color: #666;
+        border: 3px #666 solid;
+      }
+    }
+  }
+
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
