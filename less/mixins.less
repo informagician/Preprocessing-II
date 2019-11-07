@@ -1,1 +1,9 @@
 // Mixins in here
+
+.flex(@dir,@justify,@align:center,@wrap:wrap) {
+    display:flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @wrap;
+}
