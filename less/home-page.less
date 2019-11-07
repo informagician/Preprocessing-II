@@ -66,25 +66,67 @@
   }
 
   .package {
-    
+
     border-bottom: 2px dashed #ccc;
     .text-content {
       margin:0 auto;
       width: 75%;
+      @media @tablet {
+        width: 100%;
+      }
     }
     form {
       padding: 5%;
       margin: 3% 0 5%;
       background-color: #fafafa;
-      //.flex(column, space-around);
       .vehicle {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         padding-top:5%;
         text-align: center;
+        @media @tablet {
+          width: 80%;
+        }
         label {
           width: 100px;
-          margin-left:3%;
+          margin-right:3%;
+        }
+      }
+      .dates {
+        width: 60%;
+        margin: 0 auto;
+        padding-top:5%;
+        font-size: 1.5rem;
+        @media @tablet {
+          width: 80%;
+        }
+        input {
+          width: 100%;
+          margin: 2% 0 6%;
+          padding: 6px;
+          border: 1px solid #ccc;
+        }
+      }
+      .info {
+        width: 60%;
+        margin: 0 auto;
+        padding-top:5%;
+        font-size: 1.5rem;
+        @media @tablet {
+          width: 80%;
+        }
+        input {
+          width: 100%;
+          margin: 2% 0 6%;
+          padding: 6px;
+          border: 1px solid #ccc;
+        }
+
+        textarea {
+          width: 100%;
+          margin: 3% 0;
+          padding: 6px;
+          border: 1px solid #ccc;
         }
       }
       i {
@@ -95,8 +137,11 @@
         border-radius: 5px;
         text-align: center;
         width: 80px;
+        @media @mobile {
+          font-size: 3rem;
+          width: 50px;
+        }
       }
-
 
       [type=radio] { 
         position: absolute;

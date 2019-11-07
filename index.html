@@ -68,7 +68,7 @@
         <h2>Select Your Package</h2>
 
         <form>
-          <p>Select your means of travel.</p>
+          <p>Select your means of travel, dates and enter your information:</p>
           <fieldset class="vehicle">
             <label>
               <input type="radio" name="test" value="small" checked>
@@ -85,15 +85,15 @@
               <i class="fas fa-car"></i>
             </label>
           </fieldset>
-          <fieldset>
-            <label>Departure Date:<br>
-              <input type="date" name="bday"><br>
-            </label>
-            <label>Return Date:<br>
-              <input type="date" name="bday"><br>
-            </label>
+          <fieldset class="dates">
+            Departure Date:<br>
+              <input type="date" name="departure"><br>
+            
+            Return Date:<br>
+              <input type="date" name="return"><br>
+            
           </fieldset>
-          <fieldset>
+          <fieldset class="info">
             First name:<br>
             <input type="text" name="firstname" value="Mickey">
             <br>

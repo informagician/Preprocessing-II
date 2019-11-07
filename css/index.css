@@ -302,6 +302,11 @@ img {
   margin: 0 auto;
   width: 75%;
 }
+@media (max-width: 760px) {
+  .home .package .text-content {
+    width: 100%;
+  }
+}
 .home .package form {
   padding: 5%;
   margin: 3% 0 5%;
@@ -310,14 +315,59 @@ img {
   /* CHECKED STYLES */
 }
 .home .package form .vehicle {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 5%;
   text-align: center;
 }
+@media (max-width: 760px) {
+  .home .package form .vehicle {
+    width: 80%;
+  }
+}
 .home .package form .vehicle label {
   width: 100px;
-  margin-left: 3%;
+  margin-right: 3%;
+}
+.home .package form .dates {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5%;
+  font-size: 1.5rem;
+}
+@media (max-width: 760px) {
+  .home .package form .dates {
+    width: 80%;
+  }
+}
+.home .package form .dates input {
+  width: 100%;
+  margin: 2% 0 6%;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+.home .package form .info {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 5%;
+  font-size: 1.5rem;
+}
+@media (max-width: 760px) {
+  .home .package form .info {
+    width: 80%;
+  }
+}
+.home .package form .info input {
+  width: 100%;
+  margin: 2% 0 6%;
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+.home .package form .info textarea {
+  width: 100%;
+  margin: 3% 0;
+  padding: 6px;
+  border: 1px solid #ccc;
 }
 .home .package form i {
   font-size: 5rem;
@@ -327,6 +377,12 @@ img {
   border-radius: 5px;
   text-align: center;
   width: 80px;
+}
+@media (max-width: 500px) {
+  .home .package form i {
+    font-size: 3rem;
+    width: 50px;
+  }
 }
 .home .package form [type=radio] {
   position: absolute;
